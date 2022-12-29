@@ -1,7 +1,7 @@
 const baseUrl = `https://api.nlsc.gov.tw`
 
 class NLSCApi {
-    static async getCounty () {
+    static async CountyData () {
         const response = await fetch(`${baseUrl}/other/ListCounty`);
         if (!response.ok) {
             const message = `An error has occured: ${response.status}`;
