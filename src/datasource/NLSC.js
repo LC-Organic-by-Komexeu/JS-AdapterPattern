@@ -1,6 +1,12 @@
 const baseUrl = `https://api.nlsc.gov.tw`
-
+/**
+ * 國土測繪中心相關API
+ */
 class NLSCApi {
+    /**
+     * 取得縣市名稱與代碼
+     * @returns XMLDocument
+     */
     static async CountyData () {
         const response = await fetch(`${baseUrl}/other/ListCounty`);
         if (!response.ok) {
